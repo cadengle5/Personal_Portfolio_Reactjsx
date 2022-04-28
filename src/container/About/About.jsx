@@ -28,9 +28,9 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{marginTop: 10 }}>{about.description}</p>
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
+            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
         ))}
       </div>
